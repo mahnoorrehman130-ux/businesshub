@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Govt. College of Technology for Women FAISALABAD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+body {
+  background-image: url('gctwoman fsfd.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif BOLD;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #f8f9f1a;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+header {
+
+  margin-bottom:20px;
+  color: yellow;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+}
+.header-content h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.header-content p {
+  color: white;
+  margin-top: 20px;
+}
+.logo {
+  margin: 20px;
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo.left {
+  left: 25px;
+}
+.logo.right {
+  right: 25px;
+}
+
+
+nav {
+ 
+ margin-left:0px;
+  margin-right:0px;
+ margin-top:0px;
+border-radius:0px;
+  background-color: #005535;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 14px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 0%;
+  height: 3px;
+  background-color: yellow;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: #ffd700;
+}
+nav ul li a.active {
+  color: #ffd700;
+}
+nav ul li a.active::after {
+  width: 100%;
+}
+
+/* ===== DROPDOWN ===== */
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  background-color:#ffd700 ;
+  min-width: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  top: 48px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+nav ul li:hover ul.dropdown {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+nav ul li ul.dropdown li a {
+  padding: 12px 15px;
+  color: white;
+}
+nav ul li ul.dropdown li a:hover {
+  background-color: #005535;
+  color: white;
+}
+
+
+nav ul li ul.dropdown li a.selected {
+  background-color: #005535;
+  color: white;
+  font-weight: 600;
+}
+
+
+.faculty-dropdown {
+  background-color:#004080 ;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.faculty-btn {
+  width: 100%;
+  text-align: left;
+  background-color: #ffd700;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.faculty-btn:hover {
+  background-color: #ffd700;
+  color: #003366;
+}
+
+.faculty-list {
+  display: none;
+  background-color: #ffd700;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faculty-list li a {
+  display: block;
+  padding: 10px 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.faculty-list li a:hover {
+  background-color: #ffd700;
+  color: #003366;
+}
+
+/* ===== MAIN ===== */
+main {
+margin:10px;
+  text-align: center;
+  padding: 80px 20px;
+}
+main h2 {
+  color: yellow;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main p {
+
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  color:white;
+  line-height: 1.8;
+  background:  #005535;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #005535;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+</style>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-content">
+      <img src="tevta-logo.png" alt="TEVTA Logo" class="logo left">
+      <h1>Govt. College of Technology for Women Faisalabad</h1>
+      <p><b>Empowering Minds, Creating Futures</b></p>
+      <img src="punjab-logo.png" alt="Punjab Logo" class="logo right">
+    </div>
+  </header>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+
+      <li><a href="#">About Us</a>
+        <ul class="dropdown">
+          <li><a href="#">Admission Team</a>
+            <ul class="dropdown">
+              <li><a href="#">Miss Javeria</a></li>
+              <li><a href="#">Miss Salma</a></li>
+              <li><a href="#">Miss Mussarat</a></li>
+              <li><a href="#">Sir Hamza</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="#">Departments </a>
+        <ul class="dropdown">
+          <li><a href="#">DAE CIT</a></li>
+          <li><a href="#">Beautician</a></li>
+          <li><a href="#">Cooking</a></li>
+        </ul>
+      </li>
+
+      <!-- ===== FACULTY SECTION UPDATED ===== -->
+      <li class="faculty-menu">
+        <a href="#">Faculty</a>
+        <ul class="dropdown faculty-dropdown">
+          <li>
+            <button class="faculty-btn">CIT Staff</button>
+            <ul class="faculty-list">
+              <li><a href="#">Sir Ilyas</a></li>
+              <li><a href="#">Miss Minahil</a></li>
+              <li><a href="#">Miss Javeria</a></li>
+              <li><a href="#">Miss Mohandis</a></li>
+              <li><a href="#">Miss Shahida</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="faculty-btn">Admission Staff</button>
+            <ul class="faculty-list">
+              <li><a href="#">(Mst) Saima Ijaz</a></li>
+              <li><a href="#">Miss Sobia</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- ===== END FACULTY ===== -->
+
+      <li><a href="#">Admissions </a>
+        <ul class="dropdown">
+          <li><a href="#">Apply Now</a></li>
+          <li><a href="#">Requirements</a></li>
+          <li><a href="#">Important Dates</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Contact </a>
+        <ul class="dropdown">
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN SECTION ===== -->
+  <main>
+    <h2>Welcome to Govt. College of Technology for Women Faisalabad</h2>
+    <p>
+      Our college is committed to providing quality education and fostering innovation. 
+      We offer various diploma and technical programs under TEVTA to empower women for the future.
+    </p>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 GCT WOMEN. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    // Navbar Main Link Selection
+    const mainLinks = document.querySelectorAll("nav > ul > li > a");
+    mainLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mainLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      });
+    });
+
+    // Dropdown Option Selection
+    const dropdownLinks = document.querySelectorAll(".dropdown a");
+    dropdownLinks.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const parentDropdown = link.closest(".dropdown");
+        parentDropdown.querySelectorAll("a").forEach(a => a.classList.remove("selected"));
+        link.classList.add("selected");
+      });
+    });
+
+    // ===== FACULTY BUTTON FUNCTIONALITY =====
+    const facultyButtons = document.querySelectorAll(".faculty-btn");
+    facultyButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const facultyList = button.nextElementSibling;
+        document.querySelectorAll(".faculty-list").forEach(list => {
+          if (list !== facultyList) list.style.display = "none";
+        });
+        facultyList.style.display = facultyList.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
